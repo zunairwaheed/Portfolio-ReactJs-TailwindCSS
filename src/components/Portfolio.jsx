@@ -3,6 +3,7 @@ import javascript from "../../public/javascript.jpg";
 import mern from "../../public/mern.png";
 import reactnative from "../../public/reactnative.png";
 import tailwind from "../../public/tailwind.png";
+import python from "../../public/python.jpg"
 
 
 
@@ -31,6 +32,12 @@ function Portfolio() {
       logo: javascript,
       name: "Form Validator",
       text: "This is javascript website for validate the form whether all fields are filled correctly or not. Its not submit form till form is completely filled. Implemented responsive design and smooth navigation for an optimal user experience",
+    }, 
+    {
+      id: 5,
+      logo: python,
+      name: "Real State Price Predictor",
+      text: "This is price predictor model for predict the price using given classifier",
     },
   ];
   return (

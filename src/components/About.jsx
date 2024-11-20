@@ -3,7 +3,10 @@ import React from "react";
 function About() {
   return (
     <>
-      <div name="About" className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-20 ">
+      <div
+        name="About"
+        className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-20 "
+      >
         <h1 className="text-3xl font-bold mb-5">About</h1>
         <p className="text-justify">
           Hello, I am Zunair, a passionate Web Designer with a keen eye for MERN
@@ -49,14 +52,14 @@ function About() {
             Mission Statement
           </h1>
           <span className="text-justify">
-          Enthusiastic about continuous learning and keeping up with industry trends. I have a keen interest in learning and mastering various web technologies and frameworks..
+            Enthusiastic about continuous learning and keeping up with industry
+            trends. I have a keen interest in learning and mastering various web
+            technologies and frameworks..
           </span>
           <br />
           <br />
-          
         </div>
       </div>
-    
     </>
   );
 }

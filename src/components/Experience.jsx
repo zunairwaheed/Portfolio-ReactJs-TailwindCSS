@@ -5,6 +5,7 @@ import tailwind from "../../public/tailwind.png";
 import html from "../../public/html.png";
 import css from "../../public/css.png";
 import mern from "../../public/mern.png";
+import python from "../../public/python.jpg"
 
 function Experience() {
   const cardItems = [
@@ -37,6 +38,11 @@ function Experience() {
       id: 6,
       logo: tailwind,
       name: "Tailwind",
+    },
+    {
+      id: 7,
+      logo: python,
+      name: "Python",
     },
   ];
   return (

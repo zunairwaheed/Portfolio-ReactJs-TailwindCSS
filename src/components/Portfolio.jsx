@@ -37,7 +37,7 @@ function Portfolio() {
       id: 5,
       logo: python,
       name: "Real State Price Predictor",
-      text: "This is price predictor model for predict the price using given classifier",
+      text: "This is Machine Learning price predictor model for predict the price using given classifier",
     },
   ];
   return (

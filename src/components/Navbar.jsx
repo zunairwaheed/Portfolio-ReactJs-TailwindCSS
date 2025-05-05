@@ -18,7 +18,7 @@ function Navbar() {
       <div className="max-w-screen-2xl container mx-auto px-4 md:px-20 h-16 shadow-sm fixed top-0 left-0 right-0 bg-white">
         <div className="flex justify-between h-16 items-center">
           <div className="flex space-x-2 items-center">
-            <img src={pic} className="h-12 w-12 rounded-full " alt="" />
+            <img src="https://media.licdn.com/dms/image/v2/D4D03AQFSynekkrgKsQ/profile-displayphoto-shrink_800_800/B4DZVB.TLzG8Ac-/0/1740568614383?e=1752105600&v=beta&t=XLuSogR_wNicMFOYbBHr7tcI7HUpQBF5H-_rvGLhpNo" className="h-12 w-12 rounded-full " alt="" />
             <h1 className="font-semibold text-xl cursor-pointer">
               Zunai<span className="text-green-500 text-2xl">R</span>
               <p className="text-sm">Software Engineer</p>

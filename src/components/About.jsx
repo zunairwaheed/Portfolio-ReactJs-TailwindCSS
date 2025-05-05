@@ -26,8 +26,7 @@ function About() {
             Skills & Expertise
           </h1>
           <span className="text-justify">
-            MERN Stack developer | Experienced with software Tools and
-            Technologies | Problem-Solving Skills.
+            HTML, CSS, ReactJS, Tailwind CSS, JavaScript | VS-Code, GitHub, Microsoft Office | Problem-Solving Skills.
           </span>
           <br />
           <br />
@@ -35,8 +34,7 @@ function About() {
             Professional Experience
           </h1>
           <span className="text-justify">
-            Built multiple MERN Stack websites which you can access by click on
-            my github account icon.
+            MERN Stack Intern | IIFA Tech | Jan,2025 - Present
           </span>
           <br />
           <br />

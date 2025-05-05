@@ -53,17 +53,17 @@ function Home() {
                 <ul className="flex space-x-5">
                   <li className="text-2xl cursor-pointer hover:scale-110 duration-200 rounded-full border-[2px]">
                     <a href="https://www.instagram.com/m_zunairr/" target="_blank">
-                    {<FaInstagramSquare />}
+                      {<FaInstagramSquare />}
                     </a>
                   </li>
                   <li className="text-2xl cursor-pointer hover:scale-110 duration-200 rounded-full border-[2px]">
                     <a href="https://www.linkedin.com/in/zunair-waheed/" target="_blank">
-                    {<FaLinkedin />}
+                      {<FaLinkedin />}
                     </a>
                   </li>
                   <li className="text-2xl cursor-pointer hover:scale-110 duration-200 rounded-full border-[2px]">
                     <a href="https://github.com/zunairwaheed" target="_blank">
-                    {<FaGithub />}
+                      {<FaGithub />}
                     </a>
                   </li>
                 </ul>
@@ -82,7 +82,7 @@ function Home() {
           </div>
           <div className="md:w-1/2 md:ml-48 mt-8 md:mt-16 order-1">
             <img
-              src={pic}
+              src="https://media.licdn.com/dms/image/v2/D4D03AQFSynekkrgKsQ/profile-displayphoto-shrink_800_800/B4DZVB.TLzG8Ac-/0/1740568614383?e=1752105600&v=beta&t=XLuSogR_wNicMFOYbBHr7tcI7HUpQBF5H-_rvGLhpNo"
               className="rounded-full md:w-[450px] md:h-[450px]"
               alt=""
             />

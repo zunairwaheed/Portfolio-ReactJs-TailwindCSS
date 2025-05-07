@@ -1,11 +1,11 @@
-import React, { useState } from "react";
-import pic from "../../public/me.jpg";
+import React, { useState, useEffect } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { IoCloseSharp } from "react-icons/io5";
 import { Link } from "react-scroll";
 
 function Navbar() {
   const [menu, setMenu] = useState(false);
+
   const navItems = [
     { id: 1, text: "Home" },
     { id: 2, text: "About" },
@@ -13,68 +13,79 @@ function Navbar() {
     { id: 4, text: "Experience" },
     { id: 5, text: "Contact" },
   ];
+
+  // Prevent scroll when mobile menu is open
+  useEffect(() => {
+    if (menu) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [menu]);
+
   return (
-    <>
-      <div className="max-w-screen-2xl container mx-auto px-4 md:px-20 h-16 shadow-sm fixed top-0 left-0 right-0 bg-white">
-        <div className="flex justify-between h-16 items-center">
-          <div className="flex space-x-2 items-center">
-            <img src="https://media.licdn.com/dms/image/v2/D4D03AQFSynekkrgKsQ/profile-displayphoto-shrink_800_800/B4DZVB.TLzG8Ac-/0/1740568614383?e=1752105600&v=beta&t=XLuSogR_wNicMFOYbBHr7tcI7HUpQBF5H-_rvGLhpNo" className="h-12 w-12 rounded-full " alt="" />
-            <h1 className="font-semibold text-xl cursor-pointer">
+    <div className="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
+      <div className="max-w-screen-2xl container mx-auto px-4 md:px-20 h-16 flex justify-between items-center">
+        {/* Logo and name */}
+        <div className="flex space-x-3 items-center">
+          <img
+            src="https://media.licdn.com/dms/image/v2/D4D03AQFSynekkrgKsQ/profile-displayphoto-shrink_800_800/B4DZVB.TLzG8Ac-/0/1740568614383?e=1752105600&v=beta&t=XLuSogR_wNicMFOYbBHr7tcI7HUpQBF5H-_rvGLhpNo"
+            className="h-12 w-12 rounded-full object-cover"
+            alt="profile"
+          />
+          <div className="leading-tight">
+            <h1 className="font-bold text-xl cursor-pointer">
               Zunai<span className="text-green-500 text-2xl">R</span>
-              <p className="text-sm">Software Engineer</p>
             </h1>
-          </div>
-          {/* desktop navbar */}
-          <div className="">
-            <ul className="hidden md:flex space-x-8">
-              {navItems.map(({ id, text }) => (
-                <li
-                  className="hover:scale-105 duration-200 cursor-pointer"
-                  key={id}
-                >
-                  <Link
-                    to={text}
-                    smooth={true}
-                    duration={500}
-                    offset={-70}
-                    activeClass="active"
-                  >
-                    {text}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-            <div onClick={() => setMenu(!menu)} className="md:hidden">
-              {menu ? <IoCloseSharp size={24} /> : <AiOutlineMenu size={24} />}
-            </div>
+            <p className="text-xs text-gray-600">Software Engineer</p>
           </div>
         </div>
-        {/* mobile navbar */}
-        {menu && (
-          <div className="bg-white">
-            <ul className="md:hidden flex flex-col justify-center items-center h-screen text-xl space-y-3">
-              {navItems.map(({ id, text }) => (
-                <li
-                  className="hover:scale-105 duration-200 cursor-pointer font-semibold"
-                  key={id}
-                >
-                  <Link
-                    onClick={() => setMenu(!menu)}
-                    to={text}
-                    smooth={true}
-                    duration={500}
-                    offset={-70}
-                    activeClass="active"
-                  >
-                    {text}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
+
+        {/* Desktop Nav */}
+        <ul className="hidden md:flex space-x-8 font-medium">
+          {navItems.map(({ id, text }) => (
+            <li
+              key={id}
+              className="cursor-pointer hover:text-green-500 hover:scale-105 duration-200"
+            >
+              <Link
+                to={text}
+                smooth={true}
+                duration={500}
+                offset={-70}
+                activeClass="active"
+              >
+                {text}
+              </Link>
+            </li>
+          ))}
+        </ul>
+
+        {/* Mobile menu icon */}
+        <div className="md:hidden z-50" onClick={() => setMenu(!menu)}>
+          {menu ? <IoCloseSharp size={26} /> : <AiOutlineMenu size={26} />}
+        </div>
       </div>
-    </>
+
+      {/* Mobile menu overlay */}
+      {menu && (
+        <div className="fixed inset-0 bg-white flex flex-col items-center justify-center space-y-6 text-xl font-semibold md:hidden">
+          {navItems.map(({ id, text }) => (
+            <Link
+              key={id}
+              to={text}
+              smooth={true}
+              duration={500}
+              offset={-70}
+              onClick={() => setMenu(false)}
+              className="hover:text-green-500"
+            >
+              {text}
+            </Link>
+          ))}
+        </div>
+      )}
+    </div>
   );
 }
 

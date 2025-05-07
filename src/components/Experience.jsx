@@ -1,71 +1,48 @@
 import React from "react";
 import javascript from "../../public/javascript.jpg";
-import reactnative from "../../public/reactnative.png";
-import tailwind from "../../public/tailwind.png";
+import reactnative from "../../public/react.svg";
+import tailwind from "../../public/tailwind.svg";
 import html from "../../public/html.png";
 import css from "../../public/css.png";
 import mern from "../../public/mern.png";
-import python from "../../public/python.jpg"
+import python from "../../public/python.jpg";
 
 function Experience() {
   const cardItems = [
-    {
-      id: 1,
-      logo: html,
-      name: "HTML",
-    },
-    {
-      id: 2,
-      logo: css,
-      name: "CSS",
-    },
-    {
-      id: 3,
-      logo: javascript,
-      name: "JavaScript",
-    },
-    {
-      id: 4,
-      logo: reactnative,
-      name: "React",
-    },
-    {
-      id: 5,
-      logo: mern,
-      name: "MERN",
-    },
-    {
-      id: 6,
-      logo: tailwind,
-      name: "Tailwind",
-    },
-    {
-      id: 7,
-      logo: python,
-      name: "Python",
-    },
+    { id: 1, logo: html, name: "HTML" },
+    { id: 2, logo: css, name: "CSS" },
+    { id: 3, logo: javascript, name: "JavaScript" },
+    { id: 4, logo: reactnative, name: "ReactJS" },
+    { id: 5, logo: mern, name: "MERN" },
+    { id: 6, logo: tailwind, name: "TailwindCSS" },
+    { id: 7, logo: python, name: "Python" },
   ];
+
   return (
-    <div name="Experience" className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-16">
-      <div>
-        <h1 className="text-3xl font-bold mb-5">Experience</h1>
-        <span className="">
-          I have more than 1 years of experience in below technologies.
-        </span>
+    <div
+      name="Experience"
+      className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-16"
+    >
+      <div className="text-center md:text-left">
+        <h1 className="text-3xl md:text-4xl font-bold mb-3">Experience</h1>
+        <p className="text-base md:text-lg">
+          I have experience in the following technologies.
+        </p>
       </div>
-      <div className=" grid grid-cols-2 md:grid-cols-5 gap-7 my-3">
+
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5 mt-10">
         {cardItems.map(({ id, logo, name }) => (
           <div
-            className="flex flex-col items-center justify-center border-[2px] rounded-full md:w-[200px] md:h-[200px]  p-1 cursor-pointer hover:scale-110 duration-300"
             key={id}
+            className="flex flex-col items-center justify-center border-2 rounded-2xl p-4 cursor-pointer hover:scale-105 duration-300 bg-white shadow-md"
           >
             <img
               src={logo}
-              className="w-[150px] h-[150px] rounded-full "
-              alt=""
+              alt={name}
+              className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-full object-contain"
             />
-            <div>
-              <div className="px-2 font-bold text-xl mb-2">{name}</div>
+            <div className="mt-4 text-center">
+              <h2 className="text-sm sm:text-base md:text-lg font-semibold">{name}</h2>
             </div>
           </div>
         ))}

@@ -2,67 +2,72 @@ import React from "react";
 
 function About() {
   return (
-    <>
-      <div
-        name="About"
-        className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-20 "
-      >
-        <h1 className="text-3xl font-bold mb-5">About</h1>
-        <p className="text-justify">
-          Hello, I am Zunair, a passionate Web Designer with a keen eye for MERN
-          Stack. With a background in IT, I strive to create impactful and
-          visually stunning software solutions that leave a lasting impression.{" "}
-        </p>
-        <br />
+    <div
+      name="About"
+      className="max-w-screen-2xl container mx-auto px-4 md:px-20 py-20"
+    >
+      <h1 className="text-3xl md:text-4xl font-bold mb-3">About Me</h1>
+
+      <p className="text-lg text-gray-700 text-justify leading-relaxed mb-12">
+        Hello, I am <span className="font-semibold">Zunair</span>, a passionate Web Designer and Developer
+        with a focus on the <span className="font-semibold">MERN Stack</span>. With a strong foundation in
+        Information Technology, I aim to craft intuitive, responsive, and visually appealing
+        software solutions that make an impact.
+      </p>
+
+      {/* Grid Layout */}
+      <div className="grid md:grid-cols-2 gap-12 text-gray-700">
+        {/* Education */}
         <div>
-          <h1 className="text-green-600 text-xl font-semibold">Education</h1>
-          <span className="text-justify">
-            Bachelors of Science in Computer Sciences | University Of Management
-            And Technology, Lahore | 2020-2024
-          </span>
-          <br />
-          <br />
-          <h1 className="text-green-600 text-xl font-semibold">
-            Skills & Expertise
-          </h1>
-          <span className="text-justify">
-            HTML, CSS, ReactJS, Tailwind CSS, JavaScript | VS-Code, GitHub, Microsoft Office | Problem-Solving Skills.
-          </span>
-          <br />
-          <br />
-          <h1 className="text-green-600 text-xl font-semibold">
-            Professional Experience
-          </h1>
-          <span className="text-justify">
-            MERN Stack Intern | IIFA Tech | Jan,2025 - April,2025
-          </span>
-          <br />
-          <span className="text-justify">
-            Junior Full Stack Developer | CARTSMITHS | May,2025 - Present
-          </span>
-          <br />
-          <br />
-          <h1 className="text-green-600 text-xl font-semibold">
-            Achivement & Rewards
-          </h1>
-          <span className="text-justify">
-            MERN Stack Certificate | Great Learning | 2024
-          </span>
-          <br />
-          <br />
-          <h1 className="text-green-600 text-xl font-semibold">
-            Mission Statement
-          </h1>
-          <span className="text-justify">
-            Enthusiastic about continuous learning and keeping up with industry
-            trends. I have a keen interest in learning and mastering various web
-            technologies and frameworks..
-          </span>
-          <br />
-          <br />
+          <h2 className="text-xl font-semibold text-green-600 mb-2">Education</h2>
+          <p className="leading-relaxed">
+            <span className="font-medium">Bachelors of Science in Computer Sciences</span><br />
+            University Of Management And Technology, Lahore <br />
+            <span className="text-sm text-gray-500">2020 - 2024</span>
+          </p>
+        </div>
+
+        {/* Skills */}
+        <div>
+          <h2 className="text-xl font-semibold text-green-600 mb-2">Skills & Expertise</h2>
+          <p className="leading-relaxed">
+            HTML, CSS, JavaScript, ReactJS, Tailwind CSS, Node.js, Express.js, MongoDB <br />
+            Tools: VS Code, GitHub, Microsoft Office <br />
+            Strong analytical and problem-solving skills
+          </p>
+        </div>
+
+        {/* Experience */}
+        <div>
+          <h2 className="text-xl font-semibold text-green-600 mb-2">Professional Experience</h2>
+          <p className="leading-relaxed">
+            <span className="font-medium">MERN Stack Intern</span> <br />
+            IIFA Tech — <span className="text-sm text-gray-500">Jan 2025 - April 2025</span>
+            <br /><br />
+            <span className="font-medium">Junior Full Stack Developer</span> <br />
+            CARTSMITHS — <span className="text-sm text-gray-500">May 2025 - Present</span>
+          </p>
+        </div>
+
+        {/* Achievement */}
+        <div>
+          <h2 className="text-xl font-semibold text-green-600 mb-2">Achievement & Rewards</h2>
+          <p className="leading-relaxed">
+            MERN Stack Certificate — <span className="text-sm text-gray-500">Great Learning, 2024</span>
+          </p>
+        </div>
+
+        {/* Mission */}
+        <div className="md:col-span-2">
+          <h2 className="text-xl font-semibold text-green-600 mb-2">Mission Statement</h2>
+          <p className="leading-relaxed">
+            I am driven by a passion for continuous learning and staying updated with industry trends.
+            I strive to expand my skills across modern web technologies, and contribute to building
+            efficient, elegant, and user-friendly digital solutions.
+          </p>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

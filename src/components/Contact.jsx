@@ -29,7 +29,7 @@ function Contact() {
     <>
       <div
         name="Contact"
-        className="max-w-screen-2xl container mx-auto px-4 md:px-20"
+        className="max-w-screen-2xl container mx-auto px-4 md:px-20 mb-10"
       >
         <h1 className="text-3xl font-bold mb-4">Contact Us</h1>
         <span>Please fill out the below form to contact us</span>

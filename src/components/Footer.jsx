@@ -10,6 +10,10 @@ function Footer() {
       <footer className="py-12">
         <div className="max-w-screen-2xl container mx-auto px-4 md:px-20">
           <div className="flex flex-col items-center justify-center">
+            <div className="mb-5">
+              <h1 className="text-sm text-center">Email: zunairwaheed125@gmail.com</h1>
+              <h1 className="text-sm text-center">Phone: +92 324 0048893</h1>
+            </div>
             <div className="flex space-x-4">
              
               <a href="https://www.facebook.com/muhammadzunairwaheed" target="_blank">

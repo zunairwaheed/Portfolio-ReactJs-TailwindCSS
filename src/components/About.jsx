@@ -34,7 +34,11 @@ function About() {
             Professional Experience
           </h1>
           <span className="text-justify">
-            MERN Stack Intern | IIFA Tech | Jan,2025 - Present
+            MERN Stack Intern | IIFA Tech | Jan,2025 - April,2025
+          </span>
+          <br />
+          <span className="text-justify">
+            Junior Full Stack Developer | CARTSMITHS | May,2025 - Present
           </span>
           <br />
           <br />

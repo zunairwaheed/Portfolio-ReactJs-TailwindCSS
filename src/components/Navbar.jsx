@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { IoCloseSharp } from "react-icons/io5";
 import { Link } from "react-scroll";
+import me from "../assets/me.jpeg";
 
 function Navbar() {
   const [menu, setMenu] = useState(false);
@@ -29,7 +30,7 @@ function Navbar() {
         {/* Logo and name */}
         <div className="flex space-x-3 items-center">
           <img
-            src="https://media.licdn.com/dms/image/v2/D4D03AQFSynekkrgKsQ/profile-displayphoto-shrink_800_800/B4DZVB.TLzG8Ac-/0/1740568614383?e=1764806400&v=beta&t=SYtrAeoqQZesaApj1dQZue8G_H3xb9sxVjrHPurOUc8"
+            src={me}
             className="h-12 w-12 rounded-full object-cover"
             alt="profile"
           />

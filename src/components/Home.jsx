@@ -2,7 +2,7 @@ import React from "react";
 import { FaInstagramSquare, FaLinkedin, FaGithub, FaReact, FaNodeJs } from "react-icons/fa";
 import { SiMongodb, SiExpress } from "react-icons/si";
 import { ReactTyped } from "react-typed";
-import me from "../assets/me.png";
+import me from "../assets/me.jpeg";
 
 function Home() {
   return (
